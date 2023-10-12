@@ -40,6 +40,7 @@ header h1 {
   padding-right:10px;
   background-color: rgb(217, 238, 241);
 }
+
 .hero-banner {
   height: 200px;
   width: 100%;
@@ -71,44 +72,35 @@ p {
   margin: 0;
 }
 
-.page-wrapper {
+.page-section {
+  display: flex;
+  justify-content: space-evenly;
+  color:rgb(3, 4, 63)
 
+}
+
+.page-section h2 {
+  font-size:30pt;
+  border-right: solid 4px;
+  padding-right: 15px;
+}
+
+
+#work-content {
   display:grid;
-  grid-template-rows: 20% 60% 20%;
-  grid-template-columns: 30% 70%;
-  grid-template-areas: 
-  "about-title about-content"
-  "work-title work-content"
-  "contact-title contact-content";
-}
-
-.about-title {
-  grid-area: about-title;
-}
-.about-content {
-  grid-area: about-content;
-}
-.work-title {
-  grid-area: work-title;
-}
-.work-content {
-  grid-area: work-content;
-}
-.contact-title {
-  grid-area: contact-title;
-}
-.contact-content {
-  grid-area: contact-content;
-}
-
-#work {
-  display:grid;
-  grid-template-rows: 2fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
   grid-template-areas: 
   "project1 project1"
   "project2 project3"
   "project4 project5";
+}
+
+#project1 {
+  background-image: url("../images/project1.jpg");
+  height: 200px;
+  width: 400px;
+
 }
 
 .project1 {
@@ -126,3 +118,4 @@ p {
 .project5 {
   grid-area:project5;
 }
+
