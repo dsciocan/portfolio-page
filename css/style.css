@@ -74,7 +74,7 @@ p {
 
 .page-section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   color:rgb(3, 4, 63)
 
 }
@@ -82,11 +82,23 @@ p {
 .page-section h2 {
   font-size:30pt;
   border-right: solid 4px;
-  padding-right: 15px;
+  padding-right: 3%;
+  padding-left: 3%;
 }
 
+#about p {
+  margin: 3%; 
+}
+
+#about img {
+  border: solid 5px rgb(3, 4, 63);
+  margin-right: 10px;
+}
 
 #work-content {
+  margin: 3%;
+  height: 1000px;
+  width:75%;
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr 1fr;
@@ -96,26 +108,48 @@ p {
   "project4 project5";
 }
 
+
 #project1 {
-  background-image: url("../images/project1.jpg");
-  height: 200px;
-  width: 400px;
-
-}
-
-.project1 {
   grid-area:project1;
+  background-image: url("../images/project1.jpg");
+  background-size: cover;
+  border: solid 5px rgb(3, 4, 63);
+  margin: 1%;
+  
 }
-.project2 {
+#project2 {
   grid-area:project2;
+  background-image: url("../images/project2.jpg");
+  background-size: cover;
+  border: solid 5px rgb(3, 4, 63);
+  margin:1%;
 }
-.project3 {
+#project3 {
   grid-area:project3;
+  background-image: url("../images/project3.jpg");
+  background-size: cover;
+  border: solid 5px rgb(3, 4, 63);
+  margin: 1%;
 }
-.project4 {
+#project4 {
   grid-area:project4;
+  background-image: url("../images/project4.jpg");
+  background-size: cover;
+  border: solid 5px rgb(3, 4, 63);
+  margin: 1%;
 }
-.project5 {
+#project5 {
   grid-area:project5;
+  background-image: url("../images/project5.jpg");
+  background-size: cover;
+  border: solid 5px rgb(3, 4, 63);
+  margin: 1%;
 }
 
+#contact a {
+  text-decoration: none;
+  border-bottom: solid 4px;
+  font-size: 18pt;
+  margin-left: 25px;
+  color: rgb(3, 4, 63);
+}
