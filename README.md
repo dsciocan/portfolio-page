@@ -2,7 +2,7 @@
 
 ## Description
 
-Page that showcases my most recent work. Itis made up of three sections: About me, Work and Contact me. 
+Page that showcases my most recent work. It is made up of three sections: About me, Work and Contact me. 
 
 "About me" contains a short description and my picture. 
 
